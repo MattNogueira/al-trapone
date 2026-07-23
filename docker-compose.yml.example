@@ -1,7 +1,24 @@
+name: altrapone
+
 services:
-  app:
-    image: python:3.14
-    working_dir: /workspace
+  altrapone:
+    image: ${ALTRAPONE_IMAGE:?ALTRAPONE_IMAGE is required}
+    container_name: altrapone
+    restart: unless-stopped
+    init: true
+    env_file:
+      - .env
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
     volumes:
-      - .:/workspace
-    command: sleep infinity
+      - altrapone_data:/app/data
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    stop_grace_period: 20s
+
+volumes:
+  altrapone_data:
+    name: altrapone_data
