@@ -1,0 +1,14 @@
+name: altrapone-dev
+
+services:
+  altrapone:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.dev
+    container_name: altrapone-dev
+    env_file:
+      - ../.env
+    user: root
+    volumes:
+      - .:/app
+    command: sleep infinity

@@ -1,12 +1,13 @@
 {
-  "name": "Python Compose",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "app",
-  "workspaceFolder": "/workspace",
+  "name": "AlTrapone Bot (Dev)",
+  "dockerComposeFile": "../docker/docker-compose.dev.yml",
+  "service": "altrapone",
+  "workspaceFolder": "/app",
   "customizations": {
     "vscode": {
       "extensions": [
-        "ms-python.python"
+        "ms-python.python",
+        "ms-python.vscode-pylance"
       ]
     }
   }
