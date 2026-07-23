@@ -81,7 +81,7 @@ jobs:
             -P "${{ secrets.VPS_SSH_PORT }}" \
             -o BatchMode=yes \
             -o StrictHostKeyChecking=yes \
-            docker-compose.prod.yml \
+            docker-compose.yml.example \
             "${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/srv/apps/altrapone/docker-compose.yml.next"
 
       - name: Deploy exact image to VPS
