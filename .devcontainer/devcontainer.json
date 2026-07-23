@@ -3,6 +3,12 @@
   "dockerComposeFile": "../docker/docker-compose.dev.yml",
   "service": "altrapone",
   "workspaceFolder": "/app",
+  "remoteUser": "dev",
+  "containerUser": "dev",
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/dev/.ssh,type=bind,readonly"
+  ],
+  "postCreateCommand": "git config --global --add safe.directory /app && mkdir -p /home/dev/.ssh && printf 'Host github.com\\n    User git\\n    IdentityFile /home/dev/.ssh/id_ed25519_github\\n' > /home/dev/.ssh/config && chmod 700 /home/dev/.ssh && chmod 600 /home/dev/.ssh/config",
   "customizations": {
     "vscode": {
       "extensions": [
