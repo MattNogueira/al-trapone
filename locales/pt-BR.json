@@ -1,0 +1,15 @@
+{
+    "help": {
+        "title": "Em dúvida?!",
+        "description": "Esses são os serviços que posso oferecer... Se ficar em dúvida sobre algum, digite `##command_prefix##help` e o nome do comando, sim!",
+        "commands": "Comandos",
+        "ping": "verifica se estou disponível! Sou um cobrador muito ocupado, sou sim.",
+        "help": "Para os ||idiotas|| que esquecem o que sou capaz de fazer, apresento meus serviços novamente.",
+        "invite": "Um convite! Me comunicar, expandir, cobrar!"
+    },
+    "invite": {
+        "title": "Convidando o grande mestre!",
+        "description": "Clique no link nada suspeito para que eu possa me comunicar e cobrar todos os seus amigos. Gentilmente.",
+        "link": "Convidar"
+    }
+}

@@ -16,7 +16,11 @@ def main():
     if not token:
         raise RuntimeError("DISCORD_TOKEN não foi encontrada")
     
-    bot = AlTrapone(command_prefix=".", intents=intents)
+    bot = AlTrapone(
+        command_prefix=".",
+        intents=intents,
+        help_command=None
+    )
     bot.run(token)
 
 if __name__ == "__main__":

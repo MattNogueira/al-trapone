@@ -1,0 +1,15 @@
+{
+    "help": {
+        "title": "Not understanding?!",
+        "description": "The services I have to offer... Any doubt about one of them? Use `##command_prefix##help` and the command name after, I will explain!",
+        "commands": "Commands",
+        "ping": "checks if I am available! I'm kind of a busy collector, you know.",
+        "help": "For the ||imbeciles|| that forget what I can do, I list my services again.",
+        "invite": "An invitation for another server! Comunicate, expand, charge!"
+    },
+    "invite": {
+        "title": "Inviting the great master!",
+        "description": "Click on the not at all suspicious link so that I can communicate and charge all your friends. Kindly.",
+        "link": "Invite"
+    }
+}
